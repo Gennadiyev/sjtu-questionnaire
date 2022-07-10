@@ -1,6 +1,6 @@
 [project]
 name = "sjtu-questionnaire"
-version = "0.0.3"
+version = "0.1.0"
 authors = [
   { name="Kunologist", email="kunologist@foxmail.com" },
 ]
@@ -22,7 +22,7 @@ classifiers = [
 
 [tool.poetry]
 name = "sjtu-questionnaire"
-version = "0.0.3"
+version = "0.1.0"
 description = "A Python binding to SJTU Questionnaire API (https://wj.sjtu.edu.cn/)"
 authors = ["Kunologist <kunologist@foxmail.com>"]
 maintainers = ["Kunologist <kunologist@foxmail.com>"]
@@ -36,6 +36,7 @@ classifiers = [
     'Development Status :: 3 - Alpha',
     'Intended Audience :: Developers',
 ]
+documentation = "https://gennadiyev.github.io/sjtu-questionnaire/index.html"
 packages = [ { include = "sjtuq", from = "." } ]
 
 [tool.poetry.urls]

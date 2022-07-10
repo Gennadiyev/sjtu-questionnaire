@@ -2,7 +2,7 @@ from distutils.core import setup
 
 setup(
     name='sjtu-questionnaire',
-    version='0.0.3',
+    version='0.1.0',
     description='A Python binding to SJTU Questionnaire API (https://wj.sjtu.edu.cn/)',
     author='Kunologist',
     author_email='kunologist@foxmail.com',
