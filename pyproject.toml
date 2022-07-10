@@ -1,0 +1,50 @@
+[project]
+name = "sjtu-questionnaire"
+version = "0.0.3"
+authors = [
+  { name="Kunologist", email="kunologist@foxmail.com" },
+]
+description = "A Python binding to SJTU Questionnaire API (https://wj.sjtu.edu.cn/)"
+readme = "readme.md"
+license = { file="LICENSE" }
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    'Development Status :: 3 - Alpha',
+    'Intended Audience :: Developers',
+]
+
+[project.urls]
+"Homepage" = "https://github.com/Gennadiyev/sjtuq"
+"Bug Tracker" = "https://github.com/Gennadiyev/sjtuq/issues"
+
+[tool.poetry]
+name = "sjtu-questionnaire"
+version = "0.0.3"
+description = "A Python binding to SJTU Questionnaire API (https://wj.sjtu.edu.cn/)"
+authors = ["Kunologist <kunologist@foxmail.com>"]
+maintainers = ["Kunologist <kunologist@foxmail.com>"]
+readme = "README.md"
+license = "MIT"
+repository = "https://github.com/Gennadiyev/sjtuq"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    'Development Status :: 3 - Alpha',
+    'Intended Audience :: Developers',
+]
+packages = [ { include = "sjtuq", from = "." } ]
+
+[tool.poetry.urls]
+"Bug Tracker" = "https://github.com/Gennadiyev/sjtuq/issues"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+requests = "^2.6.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
