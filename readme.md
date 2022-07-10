@@ -27,4 +27,5 @@ print("# Answers:", len(answers)) # 1. Only Kunologist have answered this questi
 
 ## Documentation
 
+The documentation is generated using [`pydoctor`](https://github.com/twisted/pydoctor), hosted on [GitHub Pages](https://gennadiyev.github.io/sjtu-questionnaire/index.html) 
 
