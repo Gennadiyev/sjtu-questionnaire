@@ -1,28 +1,26 @@
-# SJTU Questionnaire
+# SJTU 问卷服务 Python API（非官方）
 
 ![requests>=2.6.0](https://img.shields.io/badge/requests-%3E%3D2.6.0-yellowgreen) ![python version support](https://img.shields.io/pypi/pyversions/requests)
 
-[Chinese Simplied / 简体中文](README_zh-cn.md)
+非官方的 [上海交通大学智能问卷服务](https://wj.sjtu.edu.cn/) 的 Python API，支持多线程。
 
-A simple unofficial Python implementation of [SJTU Questionnaire API](https://wj.sjtu.edu.cn/). Supports multi-processing.
-
-## Installation
+## 安装
 
 ```bash
 pip install sjtu-questionnaire
 ```
 
-## Quick Start
+## 快速上手
 
 ```python
 import sjtuq as Q
 
-# Create form object
+# 创建问卷对象
 form = Q.SJTUQuestionnaire("https://wj.sjtu.edu.cn/api/v1/public/export/83f581b4cfd3be8897bcabb23b25ef30/json")
-# Get all answers
-answers = form.get_all_data() # Get all data as a list
+# 获取所有答案，拒绝分页，从我做起
+answers = form.get_all_data()
 
-print("# Answers:", len(answers)) # 1. Only Kunologist have answered this questionnaire!
+print("# Answers:", len(answers)) # 返回答卷列表
 ```
 
 ## Documentation
